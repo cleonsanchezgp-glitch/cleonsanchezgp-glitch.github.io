@@ -117,8 +117,10 @@ h1 span { color: transparent; background: linear-gradient(110deg, var(--accent),
 .project-columns h4 { margin-bottom:7px;font-size:.88rem; }
 .project-columns p { color:var(--muted);font-size:.88rem;margin-bottom:0; }
 .project-note { border-left:2px solid var(--accent);padding-left:13px;font-size:.82rem;margin-top:24px; }
-.video-shell { height:100%; min-height: 380px; display:flex;flex-direction:column;justify-content:center;border:1px solid var(--line);border-radius:20px;background:#03080e;overflow:hidden;position:sticky;top:102px; }
-.video-shell video { width:100%; background:#000; aspect-ratio: 16/9; object-fit:contain; }
+.project-media { align-self:start; }
+.video-shell { width:100%; height:auto; min-height:0; display:flex; flex-direction:column; justify-content:flex-start; border:1px solid var(--line); border-radius:20px; background:#03080e; overflow:hidden; position:sticky; top:102px; }
+.video-shell video,
+.video-shell iframe { width:100%; aspect-ratio:16 / 9; height:auto; display:block; border:0; background:#000; object-fit:contain; }
 .video-label { padding:13px 16px;color:var(--muted);font-size:.76rem;border-bottom:1px solid var(--line);background:#0b1723; }
 .video-label .status-dot { width:6px;height:6px;box-shadow:none; }
 
